@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nature Landing Page</title>
+  <style>
+    /* CSS for the navigation bar */
+    body{
+      background: #ff4b1f;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #db440d, #ff1f88);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #b70fe0, #dbe270); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 10px;
+      z-index: 1;
+    }
+    
+    .navbar a {
+      color: white;
+      margin-right: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    /* CSS for the landing page content */
+    .landing-page {
+      text-align: center;
+      padding-top: 80px;
+    }
+    
+    .landing-page h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    
+    .landing-page p {
+      font-size: 18px;
+      margin-bottom: 40px;
+      color: #555;
+    }
+    
+    .landing-page .image-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 80px;
+    }
+    
+    .landing-page .image-grid img {
+      width: 300px;
+      height: auto;
+      margin: 10px;
+      border-radius: 5px;
+      transition: transform 0.3s ease-in-out;
+    }
+    
+    .landing-page .image-grid img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+  
+  <!-- Landing Page Content -->
+  <div class="landing-page">
+    <h1>Welcome to Nature</h1>
+    <p>Experience the beauty of nature through stunning images.</p>
+    
+    <div class="image-grid">
+      <a href="https://www.pexels.com/search/nature/" ><img src="natimg.jpg" alt="Nature Image 1"></a>
+      <a href="https://www.pinterest.com/pin/450289662743509380/" ><img src="aniimg.jpg" alt="Nature Image 2"></a>
+      <a href="https://www.countryliving.com/gardening/g3280/flower-pictures/" ><img src="floimg.jpg" alt="Nature Image 3"></a>
+      <!-- Add more image elements as needed -->
+    </div>
+  </div>
+</body>
+</html>

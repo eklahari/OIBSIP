@@ -1,0 +1,117 @@
+/* Add some basic styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  /* Add a background gradient */
+  body {
+    /*background : linear-gradient(to bottom, #5F0A87, #AB4BD6);*/
+    background: #fc00ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #00dbde, #fc00ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #00dbde, #fc00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+  
+  /* Style the navigation bar */
+  nav {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .logo {
+    color: #fff;
+    font-size: 30px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display:flex;
+  }
+  
+  .navbar ul li {
+    margin-right: 40px;
+  }
+  
+  .navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+  /* Add a fade-in animation to the sections */
+  .section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Add some styling to the text sections */
+  .section1text,
+  .section2text {
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .section1text h4 {
+    font-size: 32px;
+  }
+  
+  .section2text h3 {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+  
+  /* Add styling to the programming skills section */
+  .container {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .container h1 {
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .image-gallery {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-gallery .image {
+    margin: 0 10px;
+  }
+  
+  .image-gallery .image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .image-gallery .image .caption {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  /* Add styling to the footer */
+  footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  

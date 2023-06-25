@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <title>Landing page</title>
+
+</head>
+<body>
+    <nav>
+       <div class="logo">portfolio</div>
+       <div class="navbar">
+            <ul>
+                <li><a href="#section1">Home</a></li>
+                <li><a href="#section2">About</a></li>
+                <li><a href="#section3">Skills</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="section" id="section1">
+        <div class="section1text">
+            <h4>Hi, I am <span style="font-family:Sans-serif">Keerthi Lahari.</span></h4>
+            <h4>Passionate about <span id="element" style="font-family:Lucida Sans;color:rgb(246, 250, 31)"></span></h4>
+        </div>
+    </div>
+    <div class="section" id="section2">
+        <div class="section2text">
+            <h3>I am currently pursuing my second year of B.Tech Computer Science at <span style="color: yellow">R.V.R & J.C College of Engineering</span>. I have a profound interest in leading technologies such as <span style="color: yellow">Artificial Intelligence (AI), Machine Learning (ML), and Data Science (DS)</span>. Exploring the potential of these fields fascinates me, and I am constantly seeking opportunities to expand my knowledge and skills in them. I have a knack for delivering <span style="color: yellow">impactful presentations, effectively communicating complex concepts to diverse audiences</span>. Being enthusiastic and driven, I am always eager to take the lead and initiate projects or tasks. Currently, I am actively searching for internships that would allow me to apply and further develop my skills, while contributing to real-world projects. I am eager to prove my capabilities and make a meaningful contribution in a professional setting.</h3>
+        </div>
+    </div>
+    <div class="container section" id="section3">
+        <h1>Programming Skills</h1>
+        <div class="image-gallery">
+              <div class="image">
+                   <img src="cimage.png" alt="C/C++">
+                   <div class="caption">C/C++</div>
+              </div>
+              <div class="image">
+                    <img src="pythonimage.png" alt="Python">
+                    <div class="caption">Python</div>
+              </div>
+              <div class="image">
+                    <img src="javaimage.png" alt="Java">
+                    <div class="caption">Java</div>
+              </div>
+              <div class="image">
+                    <img src="htmlimage.png" alt="HTML">
+                    <div class="caption">HTML</div>
+              </div>
+              <div class="image">
+                    <img src="cssimage.png" alt="CSS">
+                    <div class="caption">CSS</div>
+              </div>
+            </div>
+    </div>
+<footer>
+    &copy; 2023 Keerthi Lahari. All rights reserved.
+</footer>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<script>
+  // Function to check if an element is in the viewport
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  // Function to handle the scroll event
+  function handleScroll() {
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(section => {
+      if (isInViewport(section)) {
+        section.classList.add('visible');
+      } else {
+        section.classList.remove('visible');
+      }
+    });
+  }
+
+  // Attach the scroll event listener
+  window.addEventListener('scroll', handleScroll);
+
+  // Initialize the Typed.js animation
+  var typed = new Typed('#element', {
+    strings: ['<i>Data Science</i>', '<i>Web Development</i>', '<i>Blogging</i>', '<i>Anchoring</i>', '<i>Coding</i>'],
+    typeSpeed: 50,
+    loop: true,
+  });
+</script>
+</body>
+</html>
